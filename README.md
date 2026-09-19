@@ -1,4 +1,4 @@
-# DecodeLabs Full Stack Development — Project 1
+# DecodeLabs — Project 1
 
 ## Responsive Frontend Interface
 
