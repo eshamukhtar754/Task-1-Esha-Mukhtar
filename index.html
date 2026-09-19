@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="StudyHub - a responsive learning resources interface.">
+  <title>StudyHub | Learn Smarter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="#home" class="logo" aria-label="StudyHub home">Study<span>Hub</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-controls="mainNav" aria-expanded="false" aria-label="Open navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" id="mainNav" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#courses">Courses</a>
+        <a href="#resources">Resources</a>
+        <a href="#about">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="eyebrow">LEARN • BUILD • GROW</p>
+          <h1>Make learning <span>simple</span> and productive.</h1>
+          <p class="hero-text">Explore practical courses and resources designed to help you build useful skills at your own pace.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#courses">Explore Courses</a>
+            <a class="btn btn-secondary" href="#resources">View Resources</a>
+          </div>
+          <div class="stats" aria-label="StudyHub statistics">
+            <div><strong>24+</strong><span>Courses</span></div>
+            <div><strong>120+</strong><span>Resources</span></div>
+            <div><strong>8k+</strong><span>Learners</span></div>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <span class="floating-badge">✦ Keep learning</span>
+          <div class="book-icon" aria-hidden="true">📚</div>
+          <h2>Your learning space</h2>
+          <p>Choose a topic, follow your progress, and keep improving every day.</p>
+          <div class="progress-row"><span>Weekly goal</span><strong>72%</strong></div>
+          <div class="progress"><span></span></div>
+          <div class="mini-grid">
+            <div><b>12</b><small>Lessons</small></div>
+            <div><b>4</b><small>Projects</small></div>
+            <div><b>86%</b><small>Progress</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="courses">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">START EXPLORING</p>
+            <h2>Popular courses</h2>
+          </div>
+          <label class="search-box">
+            <span class="sr-only">Search courses</span>
+            <input id="courseSearch" type="search" placeholder="Search courses..." autocomplete="off">
+          </label>
+        </div>
+
+        <div class="course-grid" id="courseGrid">
+          <article class="course-card" data-title="Web Development">
+            <div class="course-icon">&lt;/&gt;</div>
+            <span class="tag">Frontend</span>
+            <h3>Web Development</h3>
+            <p>Build responsive websites with HTML, CSS and JavaScript.</p>
+            <div class="card-footer"><span>8 lessons</span><a href="#resources">Start →</a></div>
+          </article>
+          <article class="course-card" data-title="Python Programming">
+            <div class="course-icon">Py</div>
+            <span class="tag">Programming</span>
+            <h3>Python Programming</h3>
+            <p>Learn core Python concepts and create useful beginner projects.</p>
+            <div class="card-footer"><span>10 lessons</span><a href="#resources">Start →</a></div>
+          </article>
+          <article class="course-card" data-title="UI Design Basics">
+            <div class="course-icon">✦</div>
+            <span class="tag">Design</span>
+            <h3>UI Design Basics</h3>
+            <p>Understand layout, typography, spacing and visual hierarchy.</p>
+            <div class="card-footer"><span>6 lessons</span><a href="#resources">Start →</a></div>
+          </article>
+        </div>
+        <p class="empty-state" id="emptyState" hidden>No courses found. Try another search.</p>
+      </div>
+    </section>
+
+    <section class="section resources" id="resources">
+      <div class="container resource-layout">
+        <div>
+          <p class="eyebrow">USEFUL MATERIAL</p>
+          <h2>Resources that keep you moving.</h2>
+          <p class="muted">Quick access to guides, project ideas and study notes.</p>
+        </div>
+        <div class="resource-list">
+          <a href="#" class="resource-item"><span>01</span><div><b>HTML &amp; CSS Guide</b><small>Build strong frontend foundations</small></div><strong>→</strong></a>
+          <a href="#" class="resource-item"><span>02</span><div><b>JavaScript Practice</b><small>Improve logic with small exercises</small></div><strong>→</strong></a>
+          <a href="#" class="resource-item"><span>03</span><div><b>Project Ideas</b><small>Turn concepts into portfolio projects</small></div><strong>→</strong></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="container about-card">
+        <div>
+          <p class="eyebrow">ABOUT STUDYHUB</p>
+          <h2>A clean digital space for focused learning.</h2>
+        </div>
+        <p>StudyHub is a simple responsive web interface demonstrating semantic HTML5, modern CSS layout techniques and lightweight JavaScript interactions.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-wrap">
+      <p>© <span id="year"></span> StudyHub. Built for learning.</p>
+      <a href="#home">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
